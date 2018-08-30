@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="564.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.opciones.interfaz.OpcionesController">
+   <children>
+      <StackPane layoutY="45.0" prefHeight="357.0" prefWidth="185.0">
+         <children>
+            <GridPane prefHeight="357.0" prefWidth="192.0" style="-fx-background-color: #3d85dd;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="100.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="57.0" minHeight="5.0" prefHeight="57.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="60.0" minHeight="1.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton fx:id="btnVLAN" alignment="BASELINE_LEFT" buttonType="RAISED" onAction="#openVLANPane" prefHeight="75.0" prefWidth="218.0" ripplerFill="#2460ae" text="Crear VLAN" textFill="#02469e" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@Proyecto_Interfaz_v0.4/ICONOS/icons8_Cancel_100px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="btnVRF" alignment="BASELINE_LEFT" buttonType="RAISED" nodeOrientation="LEFT_TO_RIGHT" onAction="#openVRFPane" prefHeight="75.0" prefWidth="215.0" ripplerFill="#2460ae" text="Crear VRF" textFill="#02469e" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Proyecto_Interfaz_v0.4/ICONOS/icons8_Cancel_100px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" prefHeight="75.0" prefWidth="225.0" ripplerFill="#2460ae" text="Crear Subred" textFill="#02469e" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Proyecto_Interfaz_v0.4/ICONOS/icons8_Cancel_100px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" prefHeight="75.0" prefWidth="214.0" ripplerFill="#2460ae" text="Cerrar Sesion" textFill="#02469e" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Proyecto_Interfaz_v0.4/ICONOS/icons8_Cancel_100px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <Label alignment="CENTER" prefHeight="57.0" prefWidth="207.0" style="-fx-border-color: #024796; -fx-border-width: 0 0 2.5 0;" text="OPERACIONES" textAlignment="CENTER" textFill="#024796">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="btnInicio" alignment="BASELINE_LEFT" buttonType="RAISED" prefHeight="75.0" prefWidth="218.0" ripplerFill="#2460ae" text="Inicio" textFill="#02469e" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@Proyecto_Interfaz_v0.4/ICONOS/icons8_Cancel_100px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </GridPane>
+         </children>
+      </StackPane>
+      <Pane prefHeight="45.0" prefWidth="564.0" style="-fx-background-color: #2460ae;">
+         <children>
+            <Label layoutX="14.0" layoutY="11.0" prefHeight="23.0" prefWidth="206.0" text="SISPRO - [nombre del pe]" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="520.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Proyecto_Interfaz_v0.4/ICONOS/icons8_Delete_104px.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="mainContainer" layoutX="185.0" layoutY="45.0" prefHeight="357.0" prefWidth="380.0">
+         <children>
+            <Pane layoutX="13.0" layoutY="10.0" prefHeight="338.0" prefWidth="355.0" style="-fx-border-color: #c5c1c1; -fx-border-radius: 10 10 0 0;">
+               <children>
+                  <GridPane layoutY="293.0" prefHeight="45.0" prefWidth="355.0" style="-fx-background-color: #ddd; -fx-border-width: 1 0 0 0; -fx-border-color: #aaa;">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+                  <Line endX="253.0" fill="BLACK" layoutX="101.0" layoutY="46.0" startX="-100.0" stroke="#b2b0b0" strokeLineCap="BUTT" />
+               </children></Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

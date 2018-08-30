@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="391.0" prefWidth="655.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.login.sistema.logica.LoginSistemaController">
+   <children>
+      <AnchorPane fx:id="mainContainer" prefHeight="9.0" prefWidth="486.0">
+         <children>
+            <ImageView fitHeight="391.0" fitWidth="655.0" pickOnBounds="true">
+               <image>
+                  <Image url="/recursos/rede1.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="20.0" layoutY="22.0" prefHeight="328.0" prefWidth="244.0" style="-fx-background-color: rgb(0,0,0,0.4);">
+               <children>
+                  <Label fx:id="texto2" layoutX="14.0" layoutY="65.0" text="Sistema de Aprovisionamiento." textFill="WHITE">
+                     <font>
+                        <Font name="Arial Narrow" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nombreAplicacion" layoutX="15.0" prefHeight="75.0" prefWidth="213.0" text="SISPRO" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Narrow Bold" size="65.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="169.0" fitWidth="173.0" layoutX="31.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/recursos/tecnologia.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="paneContainer" layoutX="354.0" layoutY="22.0" prefHeight="347.0" prefWidth="287.0" style="-fx-background-color: rgb(0,0,0,0.5); -fx-background-radius: 10;">
+               <children>
+                  <JFXButton id="btnConnect" fx:id="btnIniciarSesion" layoutX="22.0" layoutY="239.0" onAction="#verifyUserCert" prefHeight="39.0" prefWidth="128.0" ripplerFill="#29acff" style="-fx-background-color: Transparent; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #fff;" text="Iniciar Sesion" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Narrow Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <GridPane hgap="5.0" layoutX="16.0" layoutY="113.0" prefHeight="111.0" prefWidth="255.0" vgap="3.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="/recursos/router white.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="/recursos/key.png" />
+                           </image>
+                        </ImageView>
+                        <JFXPasswordField fx:id="txtPassword" focusColor="WHITE" labelFloat="true" maxWidth="210.0" minWidth="210.0" prefHeight="29.0" prefWidth="210.0" promptText="Contraseña" style="-fx-text-inner-color: white;" unFocusColor="#016d9c" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Arial Narrow Bold" size="18.0" />
+                           </font>
+                        </JFXPasswordField>
+                        <JFXTextField fx:id="nameUser" focusColor="WHITE" labelFloat="true" maxWidth="210.0" minWidth="210.0" prefHeight="25.0" prefWidth="210.0" promptText="Nombre de usuario" style="-fx-text-inner-color: white;" unFocusColor="#016d9c" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Arial Narrow Bold" size="18.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="41.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="212.0" minWidth="10.0" prefWidth="211.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="54.0" valignment="CENTER" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="54.0" valignment="CENTER" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <JFXButton id="btnCerrar" fx:id="btnCerrar" layoutX="166.0" layoutY="239.0" prefHeight="39.0" prefWidth="95.0" ripplerFill="#29acff" style="-fx-background-color: TRANSPARENT; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #FFF;" text="Cerrar" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Narrow Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <Label fx:id="texto211" layoutX="28.0" layoutY="292.0" prefHeight="47.0" prefWidth="233.0" text="SOLO PERSONAL AUTORIZADO PUEDE ACCEDER AL SISTEMA." textFill="RED" wrapText="true">
+                     <font>
+                        <Font name="Arial Narrow" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="texto1" layoutX="22.0" layoutY="24.0" text="Iniciar Sesion" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Narrow Bold" size="40.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="texto21" layoutX="23.0" layoutY="53.0" prefHeight="47.0" prefWidth="244.0" text="Inicie sesion en el sistema. " textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Arial Narrow" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

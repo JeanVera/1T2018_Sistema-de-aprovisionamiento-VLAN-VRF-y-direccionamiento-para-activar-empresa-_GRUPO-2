@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="356.0" prefWidth="292.0" style="-fx-background-color: rgb(0,0,0,0);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.login.app.logica.LoginUserController">
+   <children>
+      <Pane layoutX="1.0" layoutY="5.0" prefHeight="349.0" prefWidth="287.0" style="-fx-background-color: rgb(0,0,0,0); -fx-background-radius: 10;">
+         <children>
+            <JFXButton id="btnConnect" fx:id="btnConnect" layoutX="29.0" layoutY="294.0" onAction="#verifyTextLogin" prefHeight="39.0" prefWidth="115.0" ripplerFill="#29acff" style="-fx-background-color: Transparent; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #fff;" text="Conectar PE" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <GridPane hgap="5.0" layoutX="16.0" layoutY="117.0" prefHeight="169.0" prefWidth="255.0" vgap="3.0">
+               <children>
+                  <JFXTextField fx:id="nameUser" focusColor="WHITE" labelFloat="true" maxWidth="210.0" minWidth="210.0" prefHeight="11.0" prefWidth="210.0" promptText="Nombre de usuario" style="-fx-text-inner-color: white;" unFocusColor="#016d9c" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Arial Narrow Bold" size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/recursos/router white.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="/recursos/user.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="/recursos/key.png" />
+                     </image>
+                  </ImageView>
+                  <JFXPasswordField fx:id="txtPassword" focusColor="WHITE" labelFloat="true" maxWidth="210.0" minWidth="210.0" prefHeight="18.0" prefWidth="210.0" promptText="Contraseña" style="-fx-text-inner-color: white;" unFocusColor="#016d9c" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Arial Narrow Bold" size="18.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXTextField fx:id="namePE" focusColor="WHITE" labelFloat="true" maxWidth="210.0" minWidth="210.0" prefHeight="32.0" prefWidth="210.0" promptText="Nombre del PE" style="-fx-text-inner-color: white;" unFocusColor="#016d9c" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Arial Narrow Bold" size="18.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="41.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="212.0" minWidth="10.0" prefWidth="211.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <JFXButton id="btnCerrar" fx:id="btnCerrar" layoutX="150.0" layoutY="294.0" onAction="#closeApp" prefHeight="39.0" prefWidth="115.0" ripplerFill="#29acff" style="-fx-background-color: TRANSPARENT; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #FFF;" text="Cerrar" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="texto1" layoutX="16.0" layoutY="5.0" prefHeight="17.0" prefWidth="231.0" text="Iniciar Sesion" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow" size="40.0" />
+               </font>
+            </Label>
+            <Label fx:id="texto21" layoutX="14.0" layoutY="45.0" prefHeight="47.0" prefWidth="268.0" text="Inicia Sesion en un Dispositivo Provider Edge" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Arial Narrow" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>
